@@ -27,5 +27,9 @@ parsed_response = json.loads(response.text)
 
 #breakpoint()
 
-latest = parsed_response["data"][0]
-print(latest)
+data = parsed_response["data"]
+print("-------------------------")
+print("LATEST UNEMPLOYMENT RATE:")
+#print(data[0])
+print(f"{data[0]['value']}%", "as of", data[0]["date"])
+
