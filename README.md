@@ -1,4 +1,5 @@
-# Unemployment-Report-Marenas
+# unemployment-inclass-2022
+
 
 ## Setup
 
@@ -30,20 +31,23 @@ Then create a local ".env" file and provide the key like this:
 ALPHAVANTAGE_API_KEY="_________"
 ```
 
+
 ## Usage
 
-Run an example script
+Run an example script:
 
-´´´sh
+```sh
 python app/my_script.py
 ```
 
 Run the unemployment report:
 
-´´´sh
-python app/unemployment.py
+```sh
+python -m app.unemployment
 ```
 
-# or pass env from command line
-ALPHAVANTAGE_API_KEY="____" python app/unemployment.py
-´´´
+Run stocks report:
+
+```sh
+python -m app.stocks
+```
